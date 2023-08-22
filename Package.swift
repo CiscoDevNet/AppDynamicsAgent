@@ -3,8 +3,8 @@
 
 import PackageDescription
 
-let url = "https://cdn.appdynamics.com/eum-mobile/iOSAgent-2023.7.0.4175.zip"
-let checksum = "b49ede8f76fc161b8aac92ecbf9de1f2a442ca3f94ed6d458beb54abf5b658e6"
+let url = "https://cdn.appdynamics.com/eum-mobile/iOSAgent-2023.8.0.4197.zip"
+let checksum = "520fb6a6edafb331f7dd3c72c9b337e7ee84d63a9d396d924135c6e98b340f7a"
 
 let package = Package(
     name: "AppDynamicsAgent",
