@@ -1,7 +1,25 @@
 # AppDynamicsAgent
 This includes AppDynamics iOS SDK which is a framework that allows you to monitor the performance and activities of an iOS application as it runs.
 
----
+
+# Add Required Libraries
+
+The AppDynamics iOS Agent requires these libraries:
+
+ * SystemConfiguration.framework
+ * CoreTelephony.framework
+ * libz.dylib or .tbd
+
+## To add the libraries:
+
+ 1. Select the target that builds your app in Xcode.
+ 2. Select the Build Phases tab.
+ 3. Expand the Link Binary With Libraries section.
+ 4. If any of the above libraries are not listed:
+    * Click the + button.
+    * Locate the missing library in the list.
+    * Click Add. 
+  Repeat this step for each missing library.
 
 # Set the -ObjC Flag
 
@@ -14,13 +32,10 @@ You need to add the -ObjC flag to Other Linker Flags.
  5. Go to **Other Linker Flags** and double-click to open the popup. 
  6. If the **-ObjC** flag is not in your list, click + and add it.  
 
----
 
-# NOTE
-
+```
 The **-ObjC** flag is necessary because the iOS Agent defines categories with methods that can be called at runtime, and by default, these methods are not loaded by the linker. As a result, you'll get an "unrecognized selector" runtime exception. The use of -ObjC ensures the methods will be loaded.
-
----
+```
 
 # Further Documentation
 
