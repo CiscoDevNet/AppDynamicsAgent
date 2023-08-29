@@ -16,15 +16,15 @@ You need to add the -ObjC flag to Other Linker Flags.
 
 ---
 
-**NOTE**
+# NOTE
 
-The -ObjC flag is necessary because the iOS Agent defines categories with methods that can be called at runtime, and by default, these methods are not loaded by the linker. As a result, you'll get an "unrecognized selector" runtime exception. The use of -ObjC ensures the methods will be loaded.
+The **-ObjC** flag is necessary because the iOS Agent defines categories with methods that can be called at runtime, and by default, these methods are not loaded by the linker. As a result, you'll get an "unrecognized selector" runtime exception. The use of -ObjC ensures the methods will be loaded.
 
 ---
 
 # Further Documentation
+
 For a more detailed description of how to use SDK, or for
 troubleshooting information, please see the
 [official documentation](https://docs.appdynamics.com/appd/21.x/21.7/en/end-user-monitoring/mobile-real-user-monitoring/instrument-ios-applications)
 
----
