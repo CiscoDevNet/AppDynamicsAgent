@@ -3,9 +3,6 @@
 
 import PackageDescription
 
-let url = "https://cdn.appdynamics.com/eum-mobile/iOSAgent-2023.8.0.4197.zip"
-let checksum = "520fb6a6edafb331f7dd3c72c9b337e7ee84d63a9d396d924135c6e98b340f7a"
-
 let package = Package(
     name: "AppDynamicsAgent",
     platforms: [
@@ -15,6 +12,8 @@ let package = Package(
         .library(name: "AppDynamicsAgent", targets: ["AppDynamicsAgent"]),
     ],
     targets: [
-        .binaryTarget(name: "AppDynamicsAgent", url: url, checksum: checksum)
+        .binaryTarget(name: "AppDynamicsAgent",
+                      url: "https://cdn.appdynamics.com/eum-mobile/iOSAgent-2023.8.0.4197.zip",
+                      checksum: "520fb6a6edafb331f7dd3c72c9b337e7ee84d63a9d396d924135c6e98b340f7a")
     ]
 )
