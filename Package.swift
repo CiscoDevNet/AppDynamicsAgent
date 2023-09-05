@@ -15,6 +15,6 @@ let package = Package(
     targets: [
         .binaryTarget(name: "ADEUMInstrumentation",
                       url: "https://cdn.appdynamics.com/eum-mobile/iOSAgent-2023.8.0.zip",
-                      checksum: "ad9df9cdf4daff313c47686255d00f7574907bca7200a35be3c1943961fd9929")
+                      checksum: "435145934a56ec0bf5c840cbeac934f8bc73606125ff9b5d379e925e022e80ff")
     ]
 )
