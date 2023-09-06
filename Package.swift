@@ -1,5 +1,6 @@
-// swift-tools-version: 5.8
+// swift-tools-version: 5.4
 // The swift-tools-version declares the minimum version of Swift required to build this package.
+//  Copyright (c) 2023 AppDynamics Technologies. All rights reserved.
 
 import PackageDescription
 
@@ -9,11 +10,11 @@ let package = Package(
         .iOS(.v11)
     ],
     products: [
-        .library(name: "AppDynamicsAgent", targets: ["AppDynamicsAgent"]),
+        .library(name: "AppDynamicsAgent", targets: ["ADEUMInstrumentation"]),
     ],
     targets: [
-        .binaryTarget(name: "AppDynamicsAgent",
-                      url: "https://cdn.appdynamics.com/eum-mobile/iOSAgent-2023.8.0.4197.zip",
-                      checksum: "520fb6a6edafb331f7dd3c72c9b337e7ee84d63a9d396d924135c6e98b340f7a")
+        .binaryTarget(name: "ADEUMInstrumentation",
+                      url: "https://cdn.appdynamics.com/eum-mobile/iOSAgent-2023.8.0.zip",
+                      checksum: "435145934a56ec0bf5c840cbeac934f8bc73606125ff9b5d379e925e022e80ff")
     ]
 )
