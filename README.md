@@ -3,7 +3,7 @@
 This includes AppDynamics iOS SDK which is a framework that allows you to monitor the performance and activities of an iOS application as it runs.
 
 
-#Swift Package Manager Install
+# Swift Package Manager Install
 
 **SDK Install Requirements**
  Swift Package Manager install is supported for iOS Agent 23.10.0 or higher.
@@ -19,14 +19,15 @@ Complete the following steps in your Xcode environment to add the AppDynamics iO
 
 After you add the package, complete the following:
 
-##Add Required Libraries
-  ###The AppDynamics iOS Agent requires these libraries:
+## Add Required Libraries
+  ### The AppDynamics iOS Agent requires these libraries:
 
     * SystemConfiguration.framework
     * CoreTelephony.framework
     * libz.dylib or .tbd
   
-  ###To add the libraries:
+  ### To add the libraries:
+  
     1. Select the target that builds your app in Xcode.
     2. Select the Build Phases tab.
     3. Expand the **Link Binary With Libraries** section.
@@ -37,8 +38,10 @@ After you add the package, complete the following:
 
   Repeat this step for each missing library.
 
-###Set the -ObjC Flag
+### Set the -ObjC Flag
+
   You also need to add the -ObjC flag to Other Linker Flags.  
+  
     1. Select your project in the **Project Navigator**.
     2. In the target list, select the target that builds your application.
     3. Select the Build Settings tab.
