@@ -7,8 +7,8 @@ This includes AppDynamics iOS SDK which is a framework that allows you to monito
 
 **SDK Install Requirements**
 
- Swift Package Manager install is supported for iOS Agent 23.10.0 or higher.
- You must have the supported Xcode version >=14.1
+  1. Swift Package Manager install is supported for iOS Agent 23.10.0 or higher.
+  2. You must have the supported Xcode version >=14.1
 
 Complete the following steps in your Xcode environment to add the AppDynamics iOS SDK package:
    1. Navigate to **File > Add Packages**.
