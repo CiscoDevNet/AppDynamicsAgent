@@ -21,11 +21,13 @@ After you add the package, complete the following:
 
 ## Add Required Libraries
  **The AppDynamics iOS Agent requires these libraries:**
+ 
     * SystemConfiguration.framework
     * CoreTelephony.framework
     * libz.dylib or .tbd
   
   **To add the libraries:**
+  
     1. Select the target that builds your app in Xcode.
     2. Select the Build Phases tab.
     3. Expand the **Link Binary With Libraries** section.
@@ -36,7 +38,7 @@ After you add the package, complete the following:
 
   Repeat this step for each missing library.
 
-  **Set the -ObjC Flag
+  **Set the -ObjC Flag**
 
   You also need to add the -ObjC flag to Other Linker Flags.  
     1. Select your project in the **Project Navigator**.
