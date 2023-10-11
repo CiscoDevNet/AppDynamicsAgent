@@ -11,7 +11,7 @@ This includes AppDynamics iOS SDK which is a framework that allows you to monito
 
 Complete the following steps in your Xcode environment to add the AppDynamics iOS SDK package:
    1. Navigate to **File > Add Packages**.
-   2. In the search bar, specify the following GitHub URL: https://github.com/CiscoDevNet/AppDynamicsAgent.git
+   2. In the search bar, specify the following GitHub URL: ```https://github.com/CiscoDevNet/AppDynamicsAgent.git```
    3. Specify the version that you want to add.
    4. Click **Add Package**.
    5. Select the package and the target application.
@@ -20,13 +20,13 @@ Complete the following steps in your Xcode environment to add the AppDynamics iO
 After you add the package, complete the following:
 
 ## Add Required Libraries
-  ** The AppDynamics iOS Agent requires these libraries:**
+  ###The AppDynamics iOS Agent requires these libraries:
 
     * SystemConfiguration.framework
     * CoreTelephony.framework
     * libz.dylib or .tbd
   
-  ** To add the libraries: **
+  ###To add the libraries:
   
     1. Select the target that builds your app in Xcode.
     2. Select the Build Phases tab.
@@ -38,7 +38,7 @@ After you add the package, complete the following:
 
   Repeat this step for each missing library.
 
-  ** Set the -ObjC Flag ** 
+  ###Set the -ObjC Flag
 
   You also need to add the -ObjC flag to Other Linker Flags.  
   
