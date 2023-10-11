@@ -1,6 +1,12 @@
-# AppDynamicsAgent
+# About the AppDynamicsAgent iOS SDK
 
 This includes AppDynamics iOS SDK which is a framework that allows you to monitor the performance and activities of an iOS application as it runs.
+
+It will automatically detect and instrument HTTP requests that the enclosing application sends via **NSURLConnection** or **NSURLSessions** or any framework that uses these objects.
+
+The SDK also provides a facility to track any application crashes that occur.
+
+The SDK includes APIs to instrument specific methods in your own code, to measure durations of operations in your application (like application start up, for example), or to report an arbitrary metric.
 
 
 # Swift Package Manager Install
