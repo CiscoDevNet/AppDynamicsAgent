@@ -1,62 +1,57 @@
-# About the AppDynamicsAgent iOS SDK
+# AppDynamicsAgent iOS SDK
 
-This includes AppDynamics iOS SDK which is a framework that allows you to monitor the performance and activities of an iOS application as it runs.
+An AppDynamics iOS SDK framework for monitoring the performance and activity of iOS applications. This SDK can be added to your Xcode development environment via the AppDynamics [GitHub repository](https://github.com/CiscoDevNet/AppDynamicsAgent.git).
 
-It will automatically detect and instrument HTTP requests that the enclosing application sends via **NSURLConnection** or **NSURLSessions** or any framework that uses these objects.
-
-The SDK also provides a facility to track any application crashes that occur.
-
-The SDK includes APIs to instrument specific methods in your own code, to measure durations of operations in your application (like application start up, for example), or to report an arbitrary metric.
+⚠️ | This project contains a single manifest file (Package.swift), and there are no future plans to include any source code. As such, it is unlikely that we will be accepting contributions to the project, as its primary purpose is for binary distribution.
 
 
-# Swift Package Manager Install
+## Swift Package Manager Install
 
 **SDK Install Requirements**
 
-  1. Swift Package Manager install is supported for iOS Agent 23.10.0 or higher.
-  2. You must have the supported Xcode version >=14.1
+  * Swift Package Manager install is supported for iOS Agent 23.10.0 or higher.
+  * You must have the supported Xcode version >=14.1
 
 Complete the following steps in your Xcode environment to add the AppDynamics iOS SDK package:
-   1. Navigate to **File > Add Packages**.
-   2. In the search bar, specify the following GitHub URL: https://github.com/CiscoDevNet/AppDynamicsAgent.git
-   3. Specify the version that you want to add.
-   4. Click **Add Package**.
-   5. Select the package and the target application.
-   6. Click **Add Package**.
+1. Navigate to **File > Add Packages**.
+2. In the search bar, specify the following GitHub URL: ```https://github.com/CiscoDevNet/AppDynamicsAgent.git```
+3. Specify the version that you want to add.
+4. Click **Add Package**.
+5. Select the package and the target application.
+6. Click **Add Package**.
 
 After you add the package, complete the following:
 
 ## Add Required Libraries
-  ### The AppDynamics iOS Agent requires these libraries:
 
-    * SystemConfiguration.framework
-    * CoreTelephony.framework
-    * libz.dylib or .tbd
+### The AppDynamics iOS Agent requires these libraries:
+1. SystemConfiguration.framework
+2. CoreTelephony.framework
+3. libz.dylib or .tbd
   
-  ### To add the libraries:
-  
-    1. Select the target that builds your app in Xcode.
-    2. Select the Build Phases tab.
-    3. Expand the **Link Binary With Libraries** section.
-    4. If any of the above libraries are not listed:
-       * Click the + button.
-       * Locate the missing library in the list.
-       * Click **Add**. 
+### To add the libraries:
+1. Select the target that builds your app in Xcode.
+2. Select the Build Phases tab.
+3. Expand the **Link Binary With Libraries** section.
+4. If any of the above libraries are not listed:
+  * Click the + button.
+  * Locate the missing library in the list.
+  * Click **Add**. 
 
-  Repeat this step for each missing library.
+Repeat this step for each missing library.
 
 ### Set the -ObjC Flag
 
-  You also need to add the -ObjC flag to Other Linker Flags.  
+You also need to add the -ObjC flag to Other Linker Flags.  
   
-    1. Select your project in the **Project Navigator**.
-    2. In the target list, select the target that builds your application.
-    3. Select the Build Settings tab.
-    4. Scroll to **Linking** and open.
-    5. Go to **Other Linker Flags** and double-click to open the popup. 
-    6. If the **-ObjC** flag is not in your list, click + and add it.  
+1. Select your project in the **Project Navigator**.
+2. In the target list, select the target that builds your application.
+3. Select the Build Settings tab.
+4. Scroll to **Linking** and open.
+5. Go to **Other Linker Flags** and double-click to open the popup. 
+6. If the **-ObjC** flag is not in your list, click + and add it.  
 
-# Documentation
+## Documentation
 
 For a more detailed description of how to incorporating and utilizing the SDK, or for
 troubleshooting information, please see the
