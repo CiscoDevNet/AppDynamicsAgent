@@ -2,7 +2,7 @@
 
 An AppDynamics iOS SDK framework for monitoring the performance and activity of iOS applications. This SDK can be added to your Xcode development environment via the AppDynamics [GitHub repository](https://github.com/CiscoDevNet/AppDynamicsAgent.git).
 
-> ⚠️ | This project contains a single manifest file (Package.swift), and there are no future plans to include any source code. As such, it is unlikely that we will be accepting contributions to the project, as its primary purpose is for binary distribution.
+> ⚠️ This project contains a single manifest file `Package.swift`, and there are no future plans to include any source code. As such, it is unlikely that we will be accepting contributions to the project, as its primary purpose is for binary distribution.
 
 
 ## Swift Package Manager Install
@@ -25,9 +25,9 @@ After you add the package, complete the following:
 ## Add Required Libraries
 
 ### The AppDynamics iOS Agent requires these libraries:
-1. SystemConfiguration.framework
-2. CoreTelephony.framework
-3. libz.dylib or .tbd
+1. `SystemConfiguration.framework`
+2. `CoreTelephony.framework`
+3. `libz.dylib or .tbd`
   
 ### To add the libraries:
 1. Select the target that builds your app in Xcode.
