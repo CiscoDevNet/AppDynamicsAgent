@@ -9,7 +9,7 @@ An AppDynamics iOS SDK framework for monitoring the performance and activity of 
 
 **SDK Install Requirements**
 
-  * Swift Package Manager install is supported for iOS Agent 23.10.0 or higher.
+  * Swift Package Manager install is supported for iOS Agent 23.10.1 or higher.
   * You must have the supported Xcode version >=14.1
 
 Complete the following steps in your Xcode environment to add the AppDynamics iOS SDK package:
@@ -55,4 +55,4 @@ You also need to add the -ObjC flag to Other Linker Flags.
 
 For a more detailed description of how to incorporating and utilizing the SDK, or for
 troubleshooting information, please see the
-[official documentation](https://docs.appdynamics.com/appd/21.x/21.7/en/end-user-monitoring/mobile-real-user-monitoring/instrument-ios-applications)
+[official documentation](https://docs.appdynamics.com/appd/23.x/23.10/en/end-user-monitoring/mobile-real-user-monitoring/instrument-ios-applications/install-the-ios-sdk)
