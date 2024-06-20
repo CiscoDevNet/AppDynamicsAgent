@@ -29,7 +29,7 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "ADEUMInstrumentation",
-                      url: "https://appdynamics.jfrog.io/artifactory/maven-releases/com/appdynamics/eum/iOSAgentSPM/2024.4.0.4368/iOSAgentSPM-2024.4.0.4368.zip",
-                      checksum: "86d476e1aedaade2ff69edc8b4c96062c9933e16219cb75d4d43643d8ae974fa")
+                      url: "https://appdynamics.jfrog.io/artifactory/maven-releases/com/appdynamics/eum/iOSAgentSPM/2024.6.0.4446/iOSAgentSPM-2024.6.0.4446.zip",
+                      checksum: "482fd0b8ae133a64a1ba829a88b958dd2d1c2334617894ab159452e194d297f6")
     ]
 )
