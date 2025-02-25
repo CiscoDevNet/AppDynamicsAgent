@@ -22,14 +22,14 @@ import PackageDescription
 let package = Package(
     name: "AppDynamicsAgent",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v13)
     ],
     products: [
         .library(name: "AppDynamicsAgent", targets: ["ADEUMInstrumentation"]),
     ],
     targets: [
         .binaryTarget(name: "ADEUMInstrumentation",
-                      url: "https://appdynamics.jfrog.io/artifactory/maven-releases/com/appdynamics/eum/iOSAgentSPM/2024.12.0.4569/iOSAgentSPM-2024.12.0.4569.zip",
-                      checksum: "6552015bf10d60085d5a4f45f45ff705d9a52dfff50bde742390db033edd0a1c")
+                      url: "https://appdynamics.jfrog.io/artifactory/maven-releases/com/appdynamics/eum/iOSAgentSPM/2025.2.0.4618/iOSAgentSPM-2025.2.0.4618.zip",
+                      checksum: "9cce42449a25bbeede702d60cf17635494b5c370bf9633453f850f6dfcd352a2")
     ]
 )
