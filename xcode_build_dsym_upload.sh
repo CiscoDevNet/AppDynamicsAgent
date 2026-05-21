@@ -145,7 +145,7 @@ fi
 DSYM_UPLOAD_URL="${ADRUM_EUM_PROCESSOR}/v2/account/${ADRUM_ACCOUNT_NAME}/ios-dsym"
 
 # Find all dsym files
-find ${DWARF_DSYM_FOLDER_PATH} -type d -name \*.dSYM -print |
+find "${DWARF_DSYM_FOLDER_PATH}" -type d -name \*.dSYM -print |
     while read dsym; do
         DSYM_UUID=$(dsymIDForUploading "${dsym}")
         if [[ $DSYM_UUID == '' ]]; then
