@@ -1,4 +1,4 @@
-// swift-tools-version: 5.4
+// swift-tools-version: 5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 // SPDX-License-Identifier: Apache-2.0
 // Copyright © 2023 Cisco Systems, Inc. and its affiliates.
@@ -22,14 +22,14 @@ import PackageDescription
 let package = Package(
     name: "AppDynamicsAgent",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     products: [
         .library(name: "AppDynamicsAgent", targets: ["ADEUMInstrumentation"]),
     ],
     targets: [
         .binaryTarget(name: "ADEUMInstrumentation",
-                      url: "https://appdynamics.jfrog.io/artifactory/maven-releases/com/appdynamics/eum/iOSAgentSPM/2026.1.1.4810/iOSAgentSPM-2026.1.1.4810.zip",
-                      checksum: "8a24f6cb486810a5098b3268e7907b7378a3adb53febd17b91e99f3ea9f82f4c")
+                      url: "https://appdynamics.jfrog.io/artifactory/maven-releases/com/appdynamics/eum/iOSAgentSPM/2026.10.0.4839/iOSAgentSPM-2026.10.0.4839.zip",
+                      checksum: "6998877a7a53e8c0da58d56200f7b90e9f02c4fd7794da305e321ea929f089c5")
     ]
 )
